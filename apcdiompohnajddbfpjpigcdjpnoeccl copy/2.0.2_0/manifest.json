@@ -1,0 +1,27 @@
+{
+   "author": "Baylor Norris",
+   "background": {
+      "persistent": false,
+      "scripts": [ "extensionListener.js", "audio.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "John Cena"
+   },
+   "content_scripts": [ {
+      "js": [ "js/jquery.min.js", "js/lexer.js", "js/lexicon.js_", "js/POSTagger.js", "js/mlg-userscript.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "JOHNNNN CENNNNNAAAAA",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmSOSkwJzaR+JJPqrW+7YkPHKwa4fGXM4Sl1wzFpI5NtPJHBaaD/faQoGSN84vo+yPq8mFKMAkiUEVNiPxS81fKbVdlAAdVihs6hXUN/EuWpO8EgYzNpeTJNKCSTvRi2Hxc2I6cVs8G1ydPTnhA6ijj/PLcr1kZLkuXdoBVMmDKh81JhSnIceG5TZYrTEcQM1EcKQlZqlZ678LEm7Xdlofw2FSujk1hiCbFQYHSPbDkfJ7GuEInbxznLQLte3laza20sIcqy3M43+AGHvY+8M7hoQwU6lzkBl/ksCtecubCmDiF3oz63Ckm00tn4x+yTfXtDcPM0OUDtlGmntfASkVQIDAQAB",
+   "manifest_version": 2,
+   "name": "Sudden John Cena",
+   "permissions": [ "http://*/*", "https://*/*", "activeTab", "tabs" ],
+   "short_name": "John Cena",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.2",
+   "web_accessible_resources": [ "sounds/*" ]
+}
